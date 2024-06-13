@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Empresa</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h2>Agregar Nueva Empresa</h2>
+    <form action="empresas.php" method="post">
+        <div class="form-group">
+            <label for="nombre">Nombre de la Empresa:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="direccion">Dirección:</label>
+            <input type="text" class="form-control" id="direccion" name="direccion" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Agregar Empresa</button>
+    </form>
+    <div class="mt-4">
+        <a href="admin.php" class="btn btn-info">Volver</a>
+    </div>
+</div>
+</body>
+</html>
